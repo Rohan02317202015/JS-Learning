@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pattern Content</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <script type="module" src="./script.js"></script>
+  <header>
+    <div>
+      <h1 id="patternTitle">Pattern</h1>
+      <div class="meta" id="patternMeta">Category</div>
+    </div>
+
+    <div class="controls">
+      <a
+        class="back"
+        href="/src/index.html"
+        onclick="event.preventDefault(); if (document.referrer) { history.back(); } else { location.replace('/src/index.html'); }"
+      >
+        ← Back to Patterns
+      </a>
+    </div>
+    
+  </header>
+
+  <main>
+    <!-- Fixed template: Expand/Collapsible Sections: Concept, Application, Example, Snippet -->
+    <details open>
+      <summary>Concept</summary>
+      <p id="concept">Short description of the pattern will appear here.</p>
+    </details>
+
+    <details>
+      <summary>Application</summary>
+      <p id="application">Where and when to use this pattern.</p>
+    </details>
+
+    <details>
+      <summary>Snippet</summary>
+      <pre id="snippet"><code>// Code snippet will be shown here.</code></pre>
+    </details>
+
+    <details>
+      <summary>Example</summary>
+      <p id="example">A simple explanation or use-case demonstrating the pattern.</p>
+    </details>
+  </main>
+</body>
+</html>

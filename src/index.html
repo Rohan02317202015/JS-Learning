@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Patterns using JS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafc;
+      color: #333;
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0078d7;
+    }
+
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      padding: 20px;
+      width: 240px;
+      text-align: center;
+    }
+
+    .cta {
+      display: inline-block;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 12px;
+    }
+
+    .cta:hover {
+      background-color: #005fa3;
+    }
+
+    p#message { color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Design Patterns</h1>
+  <p id="message">Explore common design patterns implemented using JavaScript.</p>
+
+  <div class="sections">
+    <div class="card">
+      <h3>Creational Pattern</h3>
+      <!-- CTA for a pattern inside Creational - Singleton for now -->
+      <a class="cta" href="mainContent/content.html?pattern=Singleton&category=Creational">Singleton</a>
+      <a class="cta" href="mainContent/content.html?pattern=Factory&category=Creational">Factory</a>
+    </div>
+
+    <div class="card">
+      <h3>Structural Pattern</h3>
+      <a class="cta" href="mainContent/content.html?pattern=Adapter&category=Structural">Adapter</a>
+    </div>
+
+    <div class="card">
+      <h3>Behavioural Pattern</h3>
+      <a class="cta" href="mainContent/content.html?pattern=Observer&category=Behavioural">Observer</a>
+    </div>
+
+    <div class="card">
+      <h3>Architectural Pattern</h3>
+      <a class="cta" href="mainContent/content.html?pattern=MVC&category=Architectural">MVC</a>
+    </div>
+  </div>
+
+  <!-- Link external JavaScript file (kept for project scripts) -->
+  <script src="script.js"></script>
+</body>
+</html>

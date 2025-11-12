@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7fbff;
+  color: #222;
+  padding: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  max-width: 760px; /* match main content width */
+  margin: 0 auto;   /* center header content */
+  padding: 0 16px;  /* same horizontal padding as main */
+  box-sizing: border-box;
+}
+h1 { color: #0078d7; margin: 0; }
+.meta { color: #666; }
+.controls { margin-top: 14px; }
+.back {
+  background: #eee;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+main { margin-top: 20px; max-width: 760px; margin-left: auto; margin-right: auto; padding: 0 16px; }
+details {
+  background: white;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 12px auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 760px; /* ensure details align with header */
+  box-sizing: border-box;
+}
+summary { font-weight: 600; cursor: pointer; }
+pre {
+  background: #0b1020;
+  color: #e6edf3;
+  padding: 12px;
+  border-radius: 6px;
+  overflow: auto;
+  text-align: left; /* keep code left-aligned inside centered container */
+}
+.label { color: #0078d7; font-weight: 600; margin-bottom: 6px; display: block; }
+
+/* Utility for rendered lists */
+main ul { text-align: left; margin: 8px 0 0 20px; }
+main li { margin: 6px 0; }

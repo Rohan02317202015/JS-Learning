@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7fbff;
+  color: #222;
+  padding: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+h1 { color: #0078d7; margin: 0; }
+.meta { color: #666; }
+.controls { margin-top: 14px; }
+.back {
+  background: #eee;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+main { margin-top: 20px; }
+details {
+  background: white;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+summary { font-weight: 600; cursor: pointer; }
+pre {
+  background: #0b1020;
+  color: #e6edf3;
+  padding: 12px;
+  border-radius: 6px;
+  overflow: auto;
+}
+.label { color: #0078d7; font-weight: 600; margin-bottom: 6px; display: block; }
+
+/* Utility for rendered lists */
+main ul { text-align: left; margin: 8px 0 0 20px; }
+main li { margin: 6px 0; }
+
+/* Styles for Singleton example page */
+:root{
+  --brand:#0078d7;
+  --brand-dark:#005fa3;
+  --muted:#666;
+  --bg:#ffffff;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  margin:0;
+  padding:18px;
+  background:#f7fbff;
+  color:#222;
+}
+
+.example-row{ display:flex; align-items:center; justify-content:space-between; gap:16px; }
+
+/* Generic CTA button used across pages */
+.cta{
+  background:var(--brand);
+  color:#fff;
+  border:0;
+  padding:10px 14px;
+  font-size:14px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background .12s ease, transform .06s ease;
+  box-shadow:0 2px 6px rgba(0,0,0,0.06);
+}
+.cta:hover{ background:var(--brand-dark); transform:translateY(-1px); }
+.cta:active{ transform:translateY(0); }
+.cta:focus{ outline:2px solid rgba(0,120,215,0.18); outline-offset:2px; }
+
+/* Specific styling for the example buttons to give visual separation */
+#event1Btn{ background:linear-gradient(180deg,var(--brand),var(--brand-dark)); }
+#event2Btn{ background:linear-gradient(180deg,#22a66f,#177a50); }
+
+#displayPlaceholder{
+  flex:1 1 auto;
+  text-align:center;
+  padding:12px 16px;
+  border:1px dashed #cfcfcf;
+  border-radius:6px;
+  color:var(--muted);
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+}
+
+/* small screens: stack vertically */
+@media (max-width:520px){
+  .example-row{ flex-direction:column; align-items:stretch; }
+  #event1Btn, #event2Btn{ width:100%; }
+  #displayPlaceholder{ order:2; }
+}
